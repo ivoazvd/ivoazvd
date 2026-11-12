@@ -12,8 +12,20 @@ Fluxo: planner → implementer → ui-improver (só se tocou UI) → verifier �
 
 ## Instalar (na sua máquina)
 
+Windows (PowerShell), um comando por vez:
+
+```powershell
+git clone -b claude/adoring-davinci-hwr6xo https://github.com/ivoazvd/ivoazvd.git "$HOME\ivoazvd-config"
+```
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "$HOME\ivoazvd-config\claude-config\install.ps1"
+```
+
+Mac/Linux:
+
 ```bash
-git clone https://github.com/ivoazvd/ivoazvd.git && ./ivoazvd/claude-config/install.sh
+git clone -b claude/adoring-davinci-hwr6xo https://github.com/ivoazvd/ivoazvd.git ~/ivoazvd-config && ~/ivoazvd-config/claude-config/install.sh
 ```
 
 Instala em `~/.claude/` (nível de usuário), então vale para todo repositório, branch e worktree:
